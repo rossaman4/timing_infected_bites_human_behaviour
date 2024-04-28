@@ -9,9 +9,9 @@ A matter of timing: biting by malaria-infected <em>Anopheles</em> mosquitoes and
 
 #### 1. Biting
 
-The Stata dataset is <em>biting_data.dta</em> <br>
-The number of HLC for table 2 are summarized by <em>biting_getNumberOfHLC_table2.do</em>.<br>
-The hourly biting rates are estimated in R using <em>biting_getHrlyEsts_table2.r</em> - and written to <em>biting_estd_hrly_rates.csv</em>.<br><br>
+The Stata dataset is <em>1biting_data.dta</em> <br>
+The number of HLC for table 2 are summarized by <em>1biting_getNumberOfHLC_table2.do</em>.<br>
+The hourly biting rates are estimated in R using <em>1biting_getHrlyEsts_table2.r</em> - and written to <em>1biting_estd_hrly_rates.csv</em>.<br><br>
 
 
 #### 2. Sporozoites - proportion of bites infected
