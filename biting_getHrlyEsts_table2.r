@@ -18,7 +18,7 @@ biting <- read_dta("biting_data.dta")
 
 
 
-# Run biting rate estimates in glmm in R with crossed random effcts for household and day
+# Run biting rate estimates in glmm in R with crossed random effects for household and day
 
 getEstPerHr <- function(dataX, nmosq) {
   resultStore <- array(-9, dim=c(n_hours,n_cols))
