@@ -16,6 +16,9 @@ The hourly biting rates are estimated in R using <em>1biting_getHrlyEsts_table2.
 
 #### 2. Sporozoites - proportion of bites infected
 
+<em>2sporoz_propInfected_getEsts.do</em> reads in the data <em>2sporoz_data.dta</em>, calculates the estimated proportion of bites infected for hours and species and writes the estimates to <em>2sporoz_propInfected_ests.dta
+
+
 
 
 
