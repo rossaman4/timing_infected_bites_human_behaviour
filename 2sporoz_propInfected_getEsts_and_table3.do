@@ -9,8 +9,15 @@
 use "2sporoz_data.dta", clear
 
 
+* get overall proportions by species and location (in text)
+collapse (sum) ntested positive, by(sp loc)
+gen prop = positiv / ntested
+list, clean
+
+
 * get proportions  
 * by hour, species and location
+use "2sporoz_data.dta", clear
 collapse(sum) ntested positive, by(seqhr sp loc)
 
 * get proprtion infected, and se 
@@ -31,7 +38,9 @@ forvalues i = 1/48 {
 	 quietly replace estub = r(ub) in `i'
 }
 
-# table 3     
+* table 3
+* location: 1=indoors, 2=outdoors
+* species: 1=An arabiensis, 2=An funestus     
 list sp seqhr location ntested positive estprop estse estlb estub if location ==1 & sp==1, clean
 list sp seqhr location ntested positive estprop estse estlb estub if location ==1 & sp==2, clean
 list sp seqhr location ntested positive estprop estse estlb estub if location ==2 & sp==1, clean
