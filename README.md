@@ -19,6 +19,7 @@ The hourly biting rates are estimated in R using <em>1biting_getHrlyEsts_table2.
 <em>2sporoz_propInfected_getEsts.do</em> reads in the data <em>2sporoz_data.dta</em>, calculates the estimated proportion of bites infected for hours and species and writes the estimates to <em>2sporoz_propInfected_ests.dta</em>
 
 
+
 #### 3. Human behaviour - location and ITN use
 
 The human behaviour data can be downloaded from Finda MF <em>et al</em> https://doi.org/10.1371/journal.pone.0217414,  Supporting Information 5.
