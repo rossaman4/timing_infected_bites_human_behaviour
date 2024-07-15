@@ -19,8 +19,8 @@ The hourly biting rates are estimated in R using <em>1biting_getHrlyEsts_table2.
 
 #### 3. Human behaviour - location and ITN use
 
-The human behaviour data can be downloaded from Finda MF <em>et al</em> https://doi.org/10.1371/journal.pone.0217414,  Supporting Information 5.
-The data is prepared using <em>3human_behaviour_data_prepare.do</em> and written to <em>3human_behaviour_data.dta</em>.
+The human behaviour data can be downloaded from Finda MF <em>et al</em> https://doi.org/10.1371/journal.pone.0217414,  Supporting Information 5. <br>
+The data is prepared using <em>3human_behaviour_data_prepare.do</em> and written to <em>3human_behaviour_data.dta</em>. <br>
 Estimates of the proportion of household members in different locations for each hour are calculated using <em>3human_behaviour_and_table_5.do</em> and written to <em>3human_behaviour_ests.dta</em>.
 
 
