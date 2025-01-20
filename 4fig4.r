@@ -54,7 +54,7 @@ par(cex.lab=1, cex.axis=1)
 par(tcl=-0.2)
 
 
-plot(seqhr, stack_exp_nonets0_u6, type="l", las=1, ylim=c(0, 0.006), frame=FALSE, xaxt="n",xlab="", ylab="behaviour-adjusted mean infectious bites per hour", xlim=c(1,15))
+plot(seqhr, stack_exp_nonets0_u6, type="l", las=1, ylim=c(0, 0.006), frame=FALSE, xaxt="n",xlab="", ylab="infectious bites per hour x proportion in location", xlim=c(1,15))
 axis(1,at=c(1,2,3,4,5,6,7,8,9,10,11,12), labels=seqhrLabels, las=2)
 polygon(c(seqhr, rev(seqhr)), c(stack_exp_innets0_u6, rev(stack_exp_inawake0_u6)), col="lightsteelblue1")
 polygon(c(seqhr, rev(seqhr)), c(stack_exp_inawake0_u6, rev(exposure$outu6)), col="cornflowerblue")
@@ -62,8 +62,6 @@ polygon(c(seqhr, rev(seqhr)), c(exposure$outu6, zeros), col="firebrick2")
 text(4, 0.006,"Children below school age")
 floating.pie(13.4,0.0051,c(3,12,1,84), edges=600, radius=1.8, startpos=0.59, explode=0,
             col=c("cornflowerblue","firebrick2","white","lightsteelblue1"))
-# labels if orig data
-#pie.labels(13.4, 0.0051, angles=c(0.7,1.2,1.5,4),radius=c(2,1,2,0.5),labels=c("3%","12%","1%","84%"))
 # labels if Linamf data
 pie.labels(13.4, 0.0051, angles=c(0.7,1.2,1.5,4),radius=c(2,1,2,0.5),labels=c("3%","11%","1%","84%"))
 
@@ -89,9 +87,7 @@ polygon(c(seqhr, rev(seqhr)), c(exposure$outo6, zeros), col="firebrick2")
 text(5, 0.006,"School-aged children and adults")
 floating.pie(13.4,0.0051,c(5,18,1,76), edges=600, radius=1.8, startpos=0.12, explode=0,
              col=c("cornflowerblue","firebrick2","white","lightsteelblue1"))
-# orig data labels
-# pie.labels(13.4, 0.0051, angles=c(0.3,1.1,1.5,4),radius=c(2,1,2,0.5),labels=c("5%","18%","1%","76%"))
-# linemf data labels
+# Linamf data labels
 pie.labels(13.4, 0.0051, angles=c(0.3,1.1,1.5,4),radius=c(2,1,2,0.5),labels=c("6%","17%","1%","76%"))
 
 
